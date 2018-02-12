@@ -9,7 +9,7 @@ var Comp1 = ( props ) => {
 
     return (
         <div className = "comp1">
-            { name }
+            { name }, { props.att1 }
         </div>
     );
 };

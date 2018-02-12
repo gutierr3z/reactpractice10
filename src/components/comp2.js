@@ -15,7 +15,7 @@ class Comp2 extends React.Component {
     render() {
         return (
             <div className = "comp2">
-                { this.state.name }
+                { this.state.name }, { this.props.att2 }
             </div>
         );
     }

@@ -12,9 +12,9 @@ class App extends React.Component {
         return (
             <div className="app">
                 app
-                <Comp1 />
+                <Comp1 att1 = "test1" /> {/* passing a value to a child func component */}
                 <Content />
-                <Comp2 />
+                <Comp2 att2 = "test2" /> {/* passing a value to a child class component */}
             </div>
         );
     }
