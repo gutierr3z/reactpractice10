@@ -4,7 +4,7 @@
   "description": "``` git init git remote add origin https://github.com/gutierr3z/reactpractice4.git git remote -v ``` create README.md ``` git add . git commit -m 'initial commit' ``` // push the current branch and set the remote as upstream ``` git push --set-upstream origin master ``` create .gitignore ``` node_modules www/bundle.js ``` # NPM: ``` npm init -y ``` # BABEL: ``` npm install --save babel-core npm install --save babel-preset-latest npm install --save babel-preset-react ``` create .babelrc ``` {     \"presets\": [         [\"latest\", { \"modules\": false }],         \"react\"     ] } ``` # WEBPACK: ``` npm install --save webpack babel-loader ``` create src/app.js create webpack.config.js",
   "main": "./src/app.js",
   "scripts": {
-    "compile": "webpack", 
+    "compile": "webpack",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +27,8 @@
     "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
     "webpack": "^3.11.0",
     "webpack-dev-middleware": "^2.0.5"
   }
