@@ -5,10 +5,17 @@ import ReactDom from 'react-dom';
 // ==================================================
 class Comp2 extends React.Component {
 
+    constructor( props ) {
+        super( props );
+        this.state = {
+            name: 'comp2x'
+        };
+    }
+
     render() {
         return (
             <div className = "comp2">
-                comp2
+                { this.state.name }
             </div>
         );
     }

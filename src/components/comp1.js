@@ -5,9 +5,11 @@ import ReactDom from 'react-dom';
 // ==================================================
 var Comp1 = ( props ) => {
 
+    var name = 'comp1x';
+
     return (
         <div className = "comp1">
-            comp1
+            { name }
         </div>
     );
 };
