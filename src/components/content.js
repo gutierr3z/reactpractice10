@@ -10,7 +10,7 @@ class Content extends React.Component {
         super( props );
         this.state = {};
     }
-    
+
     renderList() {
         return this.props.books.map( ( book ) => {
             return (
@@ -26,6 +26,7 @@ class Content extends React.Component {
                 <ul>
                     { this.renderList() }
                 </ul>
+                value: { this.props.value }
             </div>
         );
     }
@@ -34,7 +35,8 @@ class Content extends React.Component {
 // export default Content;
 function mapStateToProps( state ) {
     return {
-        books: state.books
+        books: state.books,
+        value: state.value
     };
 }
 
