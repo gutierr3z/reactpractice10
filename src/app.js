@@ -1,21 +1,19 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import { Provider } from "react-redux";
+import { createStore } from "redux";
 // --------------------------------------------------
-import Comp1 from './components/comp1';
-import Comp2 from './components/comp2';
-import Content from './components/content';
+import Index from './components/index';
+import Reducers from './reducers/index';
 // ==================================================
 class App extends React.Component {
 
     render() {
 
         return (
-            <div className="app">
-                app
-                <Comp1 att1 = "test1" /> {/* passing a value to a child func component */}
-                <Content />
-                <Comp2 att2 = "test2" /> {/* passing a value to a child class component */}
-            </div>
+            <Provider store = { createStore( Reducers ) }>
+                <Index />
+            </Provider>
         );
     }
 };
