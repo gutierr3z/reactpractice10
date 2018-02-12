@@ -3,6 +3,7 @@ import ReactDom from 'react-dom';
 // --------------------------------------------------
 import Comp1 from './components/comp1';
 import Comp2 from './components/comp2';
+import Content from './components/content';
 // ==================================================
 class App extends React.Component {
 
@@ -12,6 +13,7 @@ class App extends React.Component {
             <div className="app">
                 app
                 <Comp1 />
+                <Content />
                 <Comp2 />
             </div>
         );
