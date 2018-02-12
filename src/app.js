@@ -3,8 +3,8 @@ import ReactDom from 'react-dom';
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 // --------------------------------------------------
-import Index from './components/index';
-import Reducers from './reducers/index';
+import Index from './components/component_index';
+import Reducers from './reducers/reducer_index';
 // ==================================================
 class App extends React.Component {
 
