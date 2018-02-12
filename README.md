@@ -26,8 +26,8 @@ npm init -y
 ```
 # BABEL:
 ```
-npm install --save babel-core \s\s
-npm install --save babel-preset-latest \s\s
+npm install --save babel-core 
+npm install --save babel-preset-latest 
 npm install --save babel-preset-react
 ```
 create .babelrc
@@ -43,9 +43,9 @@ create .babelrc
 ```
 npm install --save webpack babel-loader
 ```
-create src/app.js \s\s
-create webpack.config.js \s\s
+create src/app.js
 
+create webpack.config.js
 
 
 (webpack.config.js)-----
@@ -94,8 +94,9 @@ module.exports = {
 ```
 npm install --save express webpack-dev-middleware
 ```
-create server.js \s\s
-create www/index.html \s\s
+create server.js 
+
+create www/index.html 
 
 (server.js)-----
 ```javascript
@@ -131,7 +132,8 @@ npm install --save react react-dom
 ```
 # REDUX:
 
-npm install --save redux \s\s
+npm install --save redux 
+
 npm install --save react-redux
 
 # DEPLOY:
@@ -151,9 +153,12 @@ npm run compile
 
 # CSS MODULES
 
-npm install --save-dev css-loader \s\s
-npm install --save style-loader \s\s
-npm install --save extract-text-webpack-plugin \s\s
+npm install --save-dev css-loader 
+
+npm install --save style-loader 
+
+npm install --save extract-text-webpack-plugin 
+
 
 (webpack.config.js)-----
 ```javascript
