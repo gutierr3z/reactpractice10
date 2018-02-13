@@ -13,10 +13,22 @@ class Comp2 extends React.Component {
         };
     }
 
+    throughList() {
+        return this.props.books.map( ( book ) => {
+            return (
+                <li key = { book.title }>{ book.title }</li>
+            );
+        });
+    }
+
     render() {
         return (
             <div className = "comp2">
                 { this.state.name }, { this.props.att2 }, value: { this.props.value }
+
+                <ul>
+                    { this.throughList() }
+                </ul>
             </div>
         );
     }
