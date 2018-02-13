@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { connect } from 'react-redux';
 // --------------------------------------------------
-import { selectedBook } from '../actions/action_selectedBook';
+import { AselectedBook } from '../actions/action_selectedBook';
 import { bindActionCreators } from 'redux';
+import SelectedBookComp from './component_selectedBook';
 // ==================================================
 class Content extends React.Component {
 
@@ -15,7 +16,14 @@ class Content extends React.Component {
     renderList() {
         return this.props.books.map( ( book ) => {
             return (
-                <li key = { book.title } onClick = { () => this.props.selectedBook( book ) }>{ book.title }</li>
+                <li key = { book.title } 
+                    onClick = { 
+                        () => { 
+                            this.props.xselectedBook( book ) 
+                        }
+                    }>
+                    { book.title }
+                </li>
             );
         });
     }
@@ -27,6 +35,9 @@ class Content extends React.Component {
                 <ul>
                     { this.renderList() }
                 </ul>
+                <hr />
+                <SelectedBookComp />
+                <hr />
                 value: { this.props.value }
             </div>
         );
@@ -41,7 +52,7 @@ function mapStateToProps( state ) {
 }
 
 function mapDispatchToProps( dispatch ) {
-    return bindActionCreators( { selectedBook: selectedBook }, dispatch );
+    return bindActionCreators( { xselectedBook: AselectedBook }, dispatch );
 }
 
 export default connect( mapStateToProps, mapDispatchToProps )( Content );
